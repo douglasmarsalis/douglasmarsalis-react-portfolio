@@ -1,15 +1,16 @@
+import { useState } from "react";
 import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/hero-img.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
-import youtubeLight from "../../assets/youtube-light.svg";
-import youtubeDark from "../../assets/youtube-dark.svg";
-import facebookLight from "../../assets/facebook-light.svg";
-import facebookDark from "../../assets/facebook-dark.svg";
-import githubLight from "../../assets/github-light.svg";
-import githubDark from "../../assets/github-dark.svg";
-import linkedinLight from "../../assets/linkedin-light.svg";
-import linkedinDark from "../../assets/linkedin-dark.svg";
+import youtubeLight from "../../assets/youtube.png";
+import youtubeDark from "../../assets/youtube.png";
+import facebookLight from "../../assets/facebook.png";
+import facebookDark from "../../assets/facebook.png";
+import githubLight from "../../assets/github.png";
+import githubDark from "../../assets/github.png";
+import linkedinLight from "../../assets/linkedin.png";
+import linkedinDark from "../../assets/linkedin.png";
 import CV from "../../assets/cvResume.pdf"
 import { useTheme } from "../../common/ThemeContext";
 
@@ -24,6 +25,13 @@ function Hero() {
     const facebookIcon = theme === 'light' ? facebookLight : facebookDark;
     const githubIcon = theme === 'light' ? githubLight : githubDark;
     const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;  
+
+    const [isShaking, setIsShaking] = useState(false);
+
+    const handleClick = () => {
+        setIsShaking(true);
+        setTimeout(() => setIsShaking(false), 800);
+    };
 
   return (
     <section id="hero" className={styles.container}> 
@@ -51,9 +59,9 @@ function Hero() {
                     <img src={linkedinIcon} alt="LinkedIn Icon"/>
                 </a>
             </span>    
-                <p>Building the Future, One Website at a Time: Tailored Solutions for Every Client.</p>
+                <p className={styles.description}>Building the Future, One Website at a Time: Tailored Solutions for Every Client.</p>
                 <a href={CV} download>
-                    <button className="hover">Resume</button>
+                    <button className={isShaking ? styles.isShaking : ""} onClick={handleClick}>Resume</button>
                 </a>
         </div>
     </section>
