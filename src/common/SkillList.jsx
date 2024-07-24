@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import styles from '../sections/Skills/SkillsStyles.module.css';
 
 function SkillList({ src, skill }) {
   return (
     <span>
-        <img src={src} alt='Checkmark Icon'/>
+        <img  className={styles.checkmarkImage} src={src} alt='Checkmark Icon'/>
         <p>{skill}</p>
     </span>
   );
