@@ -10,6 +10,16 @@ import portfolio from '../../assets/portfolio.png';
 import marketingAgency from '../../assets/marketing.png'
 import ProjectCard from '../../common/ProjectCard';
 
+/*
+When needing to add more projects to your portfolio webpage:
+** https://www.flaticon.com/ -> Don't forget to source the image
+1. Add an image/icon/logo to the assets folder
+2. Import that image above by creating a variable and linking the location to the image
+3. Copy and paste the ProjectCard below to the desired location
+4. Update the information inside the ProjectCard
+5. Check to see if all links work correctly
+*/
+
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
