@@ -151,7 +151,7 @@ input[type="submit"]:hover {
 
 /*Media Queries*/
 @media (width >=800px) {
-    .textarea, input:not([type="submit"]) {
+    textarea, input:not([type="submit"]) {
         width: 600px;
         font-size: 20px;
     }
@@ -162,7 +162,7 @@ input[type="submit"]:hover {
 }
 
 @media (width >=1400px) {
-    .textarea,
+    textarea,
     input:not([type="submit"]) {
         width: 800px;
     }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/hero-img.png";
+import heroImg from "../../assets/douglasImageAI.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import youtubeLight from "../../assets/youtube.png";
@@ -11,6 +11,8 @@ import githubLight from "../../assets/github.png";
 import githubDark from "../../assets/github.png";
 import linkedinLight from "../../assets/linkedin.png";
 import linkedinDark from "../../assets/linkedin.png";
+import bluesLogoLight from "../../assets/bluesLogo.png";
+import bluesLogoDark from "../../assets/bluesLogo.png";
 import CV from "../../assets/cvResume.pdf"
 import { useTheme } from "../../common/ThemeContext";
 
@@ -24,7 +26,8 @@ function Hero() {
     const youtubeIcon = theme === 'light' ? youtubeLight : youtubeDark;
     const facebookIcon = theme === 'light' ? facebookLight : facebookDark;
     const githubIcon = theme === 'light' ? githubLight : githubDark;
-    const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;  
+    const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark; 
+    const bluesLogoIcon = theme === 'light' ? bluesLogoLight : bluesLogoDark; 
 
     const [isShaking, setIsShaking] = useState(false);
 
@@ -57,6 +60,9 @@ function Hero() {
                 </a>
                 <a href="https://www.linkedin.com/in/douglas-marsalis-74161024b/" target="_blank">
                     <img src={linkedinIcon} alt="LinkedIn Icon"/>
+                </a>
+                <a href="https://thedeltabluescafeeikaiwa.com/" target="_blank">
+                    <img src={bluesLogoIcon} alt="LinkedIn Icon"/>
                 </a>
             </span>    
                 <p className={styles.description}>Building the Future, One Website at a Time: Tailored Solutions for Every Client.</p>

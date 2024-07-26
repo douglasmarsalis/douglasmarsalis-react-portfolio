@@ -26,20 +26,6 @@ function Projects() {
         <h1 className="sectionTitle">Projects</h1>
         <div className={styles.projectsContainer}>
             <ProjectCard 
-            src={bluesCafe} 
-            link='https://thedeltabluescafeeikaiwa.com/'
-            h3='The Delta Blues Cafe - Eikaiwa'
-            h4='Homepage for the Delta Bues Cafe - English Conversation'
-            p='WordPress'
-        />
-            <ProjectCard 
-            src={youtube} 
-            link='https://www.youtube.com/@douglasbearskitchen3718'
-            h3="Douglas Bear's Kitchen"
-            h4='YouTube Cooking Channel'
-            p='iMovie editing, Keynote animation, YouTube'
-        />
-            <ProjectCard 
             src={weatherNews} 
             link='https://douglasmarsalis.github.io/weather_app_react_basic/'
             h3='Weather News'
