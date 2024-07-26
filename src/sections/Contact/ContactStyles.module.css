@@ -78,60 +78,66 @@
     }
 }
 
-/*Hero setup*/
+/*Form Styling*/
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
     text-align: center;
-    height: 100dvh;
-    min-height: 500px;
+}
 
-    .hero {
-        max-width: 200px;
-    }
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
-    span {
-        display: flex;
-        gap: 25px;
-        justify-content: center;
+textarea, 
+input:not([type="submit"]) {
+    height: 50px;
+    padding-left: 15px;
+    width: 250px;
+}
 
+textarea {
+    padding: 15px;
+    resize: none;
+    height: 250px;
+}
 
-        a {
-            margin: 0;
+input, textarea {
+    border-radius: 20px;
+    border: #888 1px solid;
+    box-sizing: border-box;
+    justify-self: center;
+    background-color: var(--background-color);
+    color: var(--form-text-color);
+}
 
-            img {
-                width: 30px;
-            }
-        }
-    }
+::placeholder {
+    color: var(--form-text-color);
+}
+/*Input Button*/
+input[type="submit"] {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 20px;
+    width: 126px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    cursor: pointer;
+    margin: auto;
+}
 
-    a {
-        width: fit-content;
-        align-self: center;
-    }
-
-/*button style and animation*/
-  button {
-      background-color: var(--btn-color);
-      color: var(--btn-text-color);
-      border: none;
-      border-radius: 20px;
-      width: 126px;
-      height: 50px;
-      font-size: 20px;
-      font-weight: bold;
-      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
-      transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-      cursor: pointer;
-  }
-
-button:hover {
+/*Input Button Animation*/
+input[type="submit"]:hover {
     transform: scale(1.05);
-    }
+}
 
-button:hover {
+input[type="submit"]:hover {
     transform: translateY(2px);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -139,59 +145,26 @@ button:hover {
 .isShaking {
     transform: scale(1.05);
     -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-  }
-}
-
-/*Toggle switch*/
-.colorModeContainer {
-    position: relative;
-}
-
-.colorMode {
-    position: absolute;
-    right: 0;
-    width: 25px;
-}
-
-.colorMode:hover {
-    cursor: pointer;
-}
-
-/*Hero description for the full stack developer*/
-.description {
-    max-width: 24ch;
-    align-self: center;
-}
-
-/*Hero All*/
-.info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 
 /*Media Queries*/
 @media (width >=800px) {
-    .container {
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-evenly;
+    .textarea, input:not([type="submit"]) {
+        width: 600px;
+        font-size: 20px;
     }
 
-    .hero {
-        max-width: 350px;
-        width: 350;
+    form {
+        gap: 40px;
     }
 }
-
 
 @media (width >=1400px) {
-    .container {
-    .hero {
-            max-width: 400px;
-            width: 400;
-        }
+    .textarea,
+    input:not([type="submit"]) {
+        width: 800px;
     }
 }
+

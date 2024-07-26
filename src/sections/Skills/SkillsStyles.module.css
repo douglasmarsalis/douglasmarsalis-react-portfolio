@@ -30,3 +30,20 @@ hr {
     background-color: var(--text-color);
     margin: 30px auto;
 }
+
+
+/*Media Queries*/
+@media (width >=800px) {
+    .skillList {
+        max-width: fit-content;
+        gap: 30px;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    hr {
+    width: 300px;
+    }
+}

@@ -28,3 +28,6 @@ Currently, two official plugins are available:
 * https://www.color-hex.com/ - hex color choices
 * https://docs.leonardo.ai/docs/generate-images-using-image-to-image-guidance - AI generated image
 * https://animista.net/play/attention/shake/shake-horizontal - button animation
+* https://www.alt-codes.net/copyright_alt_code.php - copyright code
+* https://formspree.io/forms - Formspree submit to email
+* https://www.youtube.com/watch?v=ZtAEXhpTJXk - How to make email form from Formspree.com 
