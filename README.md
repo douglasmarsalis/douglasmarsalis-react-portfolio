@@ -1,14 +1,11 @@
-# React + Vite
+# Douglas Eric Marsalis Job Portfolio - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [![License: APACHE2.0](https://img.shields.io/badge/License:_MIT-orange)](https://opensource.org/license/mit/)
 
-Currently, two official plugins are available:
+## Description
+This is the portfolio for Douglas Eric Marsalis - full stack web developer.  The project uses React JS, Vite, Node, and JSX with CSS.  The portfolio has light and dark mode settings, a downloadable pdf resume, links to projects and email messaging using FormSpree.  There are also animated buttons and icons along with an AI generated image for the logo and hero page. Editing for the image was accomplished using Canva.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-## Resources 
+## Sources
 * https://vitejs.dev - Vite 
 * https://icons8.com - Icons
 * https://www.flaticon.com - Icons
@@ -32,3 +29,38 @@ Currently, two official plugins are available:
 * https://www.youtube.com/watch?v=ZtAEXhpTJXk - How to make email form from Formspree.com 
 * https://app.leonardo.ai - AI generated image
 * https://www.canva.com/ - AI image editing 
+
+## Installation
+* npm create vite@latest
+* npm run dev
+* http://localhost:5173/ 
+
+## Link to Deployed Application
+
+
+## Website Image
+
+
+
+## License
+MIT License
+
+Copyright (c) 2023 Douglas Eric Marsalis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
