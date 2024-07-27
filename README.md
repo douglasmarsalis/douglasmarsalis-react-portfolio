@@ -40,7 +40,10 @@ This is the portfolio for Douglas Eric Marsalis - full stack web developer.  The
 
 ## Website Image
 
+![Screenshot-portfolio-dark](https://github.com/user-attachments/assets/2081e7d6-ec5f-41c8-bd68-52b25391f22a)
 
+
+![Screenshot - portfolio-light](https://github.com/user-attachments/assets/ca859488-df31-487b-abba-232eef0d380d)
 
 ## License
 MIT License
